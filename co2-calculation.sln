@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "co2-calculation-test", "co2-calculation-test\co2-calculation-test.csproj", "{D7D16E77-9EFF-4EE3-93E7-61EF3ED99455}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "co2-calculation", "co2-calculation\co2-calculation.csproj", "{52F35C50-50D3-4197-BFA8-DD2848503203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7D16E77-9EFF-4EE3-93E7-61EF3ED99455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D16E77-9EFF-4EE3-93E7-61EF3ED99455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D16E77-9EFF-4EE3-93E7-61EF3ED99455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D16E77-9EFF-4EE3-93E7-61EF3ED99455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52F35C50-50D3-4197-BFA8-DD2848503203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F35C50-50D3-4197-BFA8-DD2848503203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F35C50-50D3-4197-BFA8-DD2848503203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F35C50-50D3-4197-BFA8-DD2848503203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9F0836F-3855-4B25-A603-394E4C3ED703}
+	EndGlobalSection
+EndGlobal
