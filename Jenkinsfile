@@ -7,7 +7,7 @@ pipeline{
     stage('Restore packages'){
         steps{
         echo "Getting Nuget packages ..."
-	bat "dotnet restore {%workspace%}/Co2-Calculation_master/co2-calculation.sln"
+	bat "dotnet restore %workspace%/co2-calculation.sln"
         }
     }
     stage('Build'){
