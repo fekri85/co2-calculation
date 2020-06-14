@@ -8,13 +8,13 @@ pipeline{
     stage('Restore packages'){
         steps{
         echo "Getting Nuget packages ..."
-        bxat "dotnet restore D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation.sln"
+        bxat "dotnet restore D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation/co2-calculation.csproj"
         }
     }
     stage('Build'){
     steps{
 	echo "Building the project ..."
-      bat "dotnet build D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation.sln"
+      bat "dotnet build D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation/co2-calculation.csproj"
     }
    }
    stage('Test'){
