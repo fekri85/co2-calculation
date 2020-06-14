@@ -19,7 +19,7 @@ pipeline{
    }
    stage('Test'){
    steps{
-      bat "dotnet test D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation.dll"
+      bat "dotnet test D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation-test/bin/Debug/netcoreapp3.1/co2-calculation-test.dll"
     }
    }
   }
