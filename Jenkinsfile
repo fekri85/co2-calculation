@@ -12,13 +12,14 @@ pipeline{
     }
     stage('Build'){
     steps{
-	echo "Building the project ..."
-      bat "dotnet build D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation.sln"
+      echo "Building the project ..."
+      bat "dotnet build %workspace%/co2-calculation.sln"
     }
    }
    stage('Test'){
    steps{
-      bat "dotnet test D:/Jenkins_home/workspace/Co2-Calculation_master/co2-calculation-test/bin/Debug/netcoreapp3.1/co2-calculation-test.dll"
+      echo "Running sample test ..."	   
+      bat "dotnet test %workspace%/co2-calculation-test/bin/Debug/netcoreapp3.1/co2-calculation-test.dll"
     }
    }
   }
