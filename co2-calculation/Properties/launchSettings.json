@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "co2-calculation": {
+      "commandName": "Project",
+      "commandLineArgs": "--transportation-method small-petrol-car --distance 1200 --unit-of-distance m --output g"
+    }
+  }
+}
