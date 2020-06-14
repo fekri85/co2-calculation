@@ -14,7 +14,7 @@ namespace co2_calculation_test
             string unit_Of_distance = "km";
 
             var actual = _co2_Calulator.Calc_CO2e(transportation_method, distance, unit_Of_distance);
-            Assert.AreEqual(23100, actual, $"{actual} Calc_CO2e is not correct!");
+            Assert.AreEqual(231000, actual, $"{actual} Calc_CO2e is not correct!");
         }
     }
 }
