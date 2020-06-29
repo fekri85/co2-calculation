@@ -24,11 +24,10 @@ Transportation methods in CO2e per passenger per km:
 - bus : 27g
 - train : 6g
 --------------------------
-#### Requirements:
-
+##### Requirements: 
 MS Visual studio 2019
-.net core 3.1
-or running on Jenkins pipeline
+.Net core 2.1
+or runnning on jenkins pipeline 
 ---------------------------
 This app is written by C# and a console app. 
 
