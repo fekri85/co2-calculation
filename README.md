@@ -1,41 +1,45 @@
-CO2 Emission Calculator 
-Source of data :  BEIS/Defra Greenhouse Gas Conversion Factors 2019
+###CO2 Emission Calculator 
 
-CO2 DATA :
+
+Source of data :   [BEIS/Defra Greenhouse Gas Conversion Factors 2019](https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2019 "BEIS/Defra Greenhouse Gas Conversion Factors 2019")
+
+####CO2 DATA :
 Transportation methods in CO2e per passenger per km:
-Small cars:
-small-diesel-car : 142g
-small-petrol-car : 154g
-small-plugin-hybrid-car : 73g
-small-electric-car : 50g
-Medium cars:
-medium-diesel-car : 171g
-medium-petrol-car : 192g
-medium-plugin-hybrid-car : 110g
-medium-electric-car : 58g
-Large cars:
-large-diesel-car : 209g
-large-petrol-car : 282g
-large-plugin-hybrid-car : 126g
-large-electric-car : 73g
+#####Small cars:
+- small-diesel-car : 142g
+- small-petrol-car : 154g
+- small-plugin-hybrid-car : 73g
+- small-electric-car : 50g
+#####Medium cars:
+- medium-diesel-car : 171g
+- medium-petrol-car : 192g
+- medium-plugin-hybrid-car : 110g
+- medium-electric-car : 58g
+#####Large cars:
+- large-diesel-car : 209g
+- large-petrol-car : 282g
+- large-plugin-hybrid-car : 126g
+- large-electric-car : 73g
+#####other:
 bus : 27g
 train : 6g
-
-Requirements:
-MS Visual 2019
+--------------------------
+####Requirements:
+MS Visual studio 2019
 .net core 3.1
-
-this app is written by C# and a console app. 
+or running on Jenkins pipeline
+---------------------------
+This app is written by C# and a console app. 
 For running, build the co2-calculation build the co2-calculation-Test
 
 The default commands line parameters are in the debug of co2-calculation: 
 in console :
 co2-calculation --transportation-method small-petrol-car --distance 1200 --unit-of-distance m --output g
 
- for help :
+ #####for help :
 co2-calculation -help
 
-Test:
+#####Test:
 one Unit test has included in code, CalcTest with sample "small-petrol-car"  by distances 1500 km, and expected output should be 231000.
 
 Jenkinsfile has these stages:
