@@ -21,7 +21,7 @@ namespace co2_calculation
             u = u.ToLower();
             if (u != "km" && u != "m")
                 throw new ArgumentOutOfRangeException(MyKeys.__unit_of_distance);
-            double d_in_km = u == "m" ? d / 1000 : d;
+            double d_in_km = u == "m" ? d / 1000.0 : d;
             return d_in_km * _cO2_Data.Get_CO2e_Per_Passenger_Per_km(tm);
         }
     }

@@ -13,7 +13,7 @@ namespace co2_calculation
             output = output.ToLower();
             if (output != "kg" && output != "g")
                 throw new ArgumentOutOfRangeException(MyKeys.__output);
-            string co2e = $"{(output == "kg" ? co2e_in_g / 1000 : co2e_in_g)}{output}";
+            string co2e = $"{string.Format("{0:00.0}",(output == "kg" ? co2e_in_g / 1000.0 : co2e_in_g))}{output}";
             Console.WriteLine($"your trip caused {co2e} of CO2-equivalent.");
         }
     }

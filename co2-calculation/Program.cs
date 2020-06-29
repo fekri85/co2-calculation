@@ -50,7 +50,7 @@ namespace co2_calculation
                 }
                 if (show_help)
                 {
-                    Console.WriteLine($@"Example: CO2-calc --{MyKeys.__transportation_method} small-petrol-car --{MyKeys.__distance} 1500 --{MyKeys.__unit_of_distance} km --{MyKeys.__output} kg ");
+                    Console.WriteLine($@"Example: co2-calculation --{MyKeys.__transportation_method} small-petrol-car --{MyKeys.__distance} 1500 --{MyKeys.__unit_of_distance} km --{MyKeys.__output} kg ");
 
                 }
                 else
