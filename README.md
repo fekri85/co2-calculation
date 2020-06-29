@@ -21,18 +21,21 @@ Transportation methods in CO2e per passenger per km:
 - large-plugin-hybrid-car : 126g
 - large-electric-car : 73g
 ##### other:
-bus : 27g
-train : 6g
+- bus : 27g
+- train : 6g
 --------------------------
 #### Requirements:
+
 MS Visual studio 2019
 .net core 3.1
 or running on Jenkins pipeline
 ---------------------------
 This app is written by C# and a console app. 
+
 For running, build the co2-calculation build the co2-calculation-Test
 
 The default commands line parameters are in the debug of co2-calculation: 
+
 in console :
 co2-calculation --transportation-method small-petrol-car --distance 1200 --unit-of-distance m --output g
 
@@ -43,4 +46,5 @@ co2-calculation -help
 one Unit test has included in code, CalcTest with sample "small-petrol-car"  by distances 1500 km, and expected output should be 231000.
 
 Jenkinsfile has these stages:
+
 get the repo, NuGet packages, build and run the sample test.
